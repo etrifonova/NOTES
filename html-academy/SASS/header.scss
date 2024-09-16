@@ -1,0 +1,23 @@
+.parent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: aqua;
+  padding: 50px;
+  @include sizes(200px, 200px);
+}
+
+.child {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color: yellow;
+  // width: 50px;
+  // height: 50px;
+  margin: 20px;
+}
+
+.child:first-child {
+  flex-grow: 2;
+  flex-shrink: 2;
+}

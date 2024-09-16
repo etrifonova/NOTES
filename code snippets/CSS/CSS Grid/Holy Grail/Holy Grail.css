@@ -1,0 +1,99 @@
+/* Первый вариант стилей, с указанием нумерованных грид-линий в свойстве grid-column: */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.hg {
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows:
+    100px
+    1fr
+    30px;
+  grid-gap: 10px;
+  min-height: 100vh;
+}
+
+/* Чтобы сетка занимала всю доступную высоту окна браузера, в качестве значения свойства min-height для грид-контейнера мы используем величину 100vh. Единица изменения vh эквивалентна 1% высоты окна браузера. В отличие от %, единица измерения vh не требует установки значений по цепочке родительских элементов, так как её значение вычисляется напрямую относительно окна браузера. И величина 100vh всегда составляет всю высоту окна браузера. */
+
+.hg-header {
+  grid-column: 1 / 4;
+
+  /* или вариант через отрицательное значение */
+  /* grid-column: 1 / -1; */
+
+  /* или вариант через ключевое слово span */
+  /* указываем первый столбец в качестве начала
+     и количество дорожек, которое будет охватывать грид-элемент */
+  /* grid-column: 1 / span 3; */
+}
+
+.hg-footer {
+  grid-column: 1 / 4;
+}
+
+/* 
+Второй вариант стилей, с именованием грид-областей:
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.hg {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "navigation main ads"
+    "footer footer footer";
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows:
+    100px
+    1fr
+    30px;
+  grid-gap: 10px;
+  min-height: 100vh;
+}
+
+.hg-header {
+  grid-area: header;
+}
+
+.hg-footer {
+  grid-area: footer;
+}
+
+.hg-main {
+  grid-area: main;
+}
+
+.hg-menu {
+  grid-area: navigation;
+}
+
+.hg-aside {
+  grid-area: ads;
+}
+
+Такой способ более наглядный и гибкий. Для перестроения блоков достаточно поменять количество столбцов и рядов в grid-template-columns/grid-template-rows и указать другой порядок областей в значении свойства grid-template-areas, при этом не меняя разметку.
+
+Для «перестроенного» варианта раскладки нужно поправить стили:
+
+.hg {
+  grid-template-areas:
+    "header header"
+    "navigation navigation"
+    "main ads"
+    "footer footer";
+  grid-template-columns: 1fr 150px;
+  grid-template-rows:
+    100px
+    auto
+    1fr
+    30px;
+}
+
+
+*/

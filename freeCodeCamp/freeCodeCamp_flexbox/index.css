@@ -1,0 +1,319 @@
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+}
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.flex-direction-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-direction-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.justify-content-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-content-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-space-around {
+  justify-content: space-around;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
+.margin-auto-logout > div:nth-child(3) {
+  margin-left: auto;
+}
+
+.margin-auto-search > div:nth-child(2) {
+  margin-left: auto;
+}
+
+.margin-auto-home {
+  justify-content: flex-end;
+}
+.margin-auto-home > div:nth-child(1) {
+  margin-right: auto;
+}
+
+.flex-1-for-three > div {
+  flex: 1;
+}
+
+.flex-1-for-four > div {
+  flex: 1;
+}
+
+.flex-2-for-one > div:nth-child(2) {
+  flex: 2;
+}
+
+.flex-1-for-two > div:not(div:nth-child(2)) {
+  flex: 1;
+}
+
+.container-5 {
+  height: 50%;
+}
+
+.align-items-stretch {
+  align-items: stretch;
+}
+
+.align-items-flex-start {
+  align-items: flex-start;
+}
+
+.align-items-flex-end {
+  align-items: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-justify-content-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.align-items-justify-content-center > div {
+  border-radius: 8px;
+}
+
+.container-6 {
+  height: 50%;
+  align-items: center;
+}
+
+.align-self-flex-start > div:nth-child(3) {
+  align-self: flex-start;
+}
+
+.align-self-flex-end > div:nth-child(1) {
+  align-self: flex-end;
+}
+
+.container-7 {
+  height: 50%;
+  flex-direction: column;
+}
+
+.fd-column-jc-flex-start {
+  justify-content: flex-start;
+}
+
+.fd-column-jc-flex-end {
+  justify-content: flex-end;
+}
+
+.fd-column-jc-flex-center {
+  justify-content: center;
+}
+
+.fd-column-jc-flex-center-ai-flex-end {
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.fd-column-jc-flex-center-ai-flex-start {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.fd-column-jc-flex-center-ai-stretch {
+  justify-content: center;
+  align-items: stretch;
+}
+
+.bottom-right-corner {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.container-8 div {
+  width: 300px;
+}
+
+.flex-wrap-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-wrap-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-wrap-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.fsgb__flex-1 > div {
+  flex: 1;
+  /* above is the shorthand for flex: 1 1 0, which, in its turn, is also a shorthand for the following: */
+  /* flew-grow: 1;
+    flex-shrink: 1;
+    basis: 0; */
+}
+
+.fsgb__flex-basis > div:nth-child(1) {
+  flex-basis: 200px;
+}
+
+.fsgb__flex-basis > div:nth-child(2) {
+  flex-basis: 200px;
+}
+
+.fsgb__flex-basis-flex-grow > div:nth-child(1) {
+  flex-basis: 200px;
+  flex-grow: 1;
+  /* flew-grow: 0; means that the item doesn't take available space */
+}
+
+.fsgb__flex-basis-flex-grow > div:nth-child(2) {
+  flex-basis: 200px;
+  flex-grow: 2;
+  /* this item's flex-grow property is twice as big as that of the previous one, and when the container is growing in width, it takes twice as much available space because the flex-grow values of all items are related to each other */
+}
+
+.fsgb__flex-basis-grow-shrink > div:nth-child(1) {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 300px;
+  /* shorthand:
+    flex: 1 0 300px; */
+}
+
+.fsgb__flex-basis-grow-shrink > div:nth-child(2) {
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: 300px;
+  /* this item does all the shrinking when the threshold is reached because the item above is set to 0 */
+  /* shorthand:
+    flex: 2 1 300px; */
+}
+
+.fsgb__task > div:nth-child(1) {
+  flex: 1 1 200px;
+}
+
+.fsgb__task > div:nth-child(2) {
+  flex: 10 1 200px;
+}
+
+.order__1 > div:nth-child(2) {
+  order: 1;
+  /* the 2nd item will be closest to the flex-end side */
+}
+
+.order__-1 > div:nth-child(3) {
+  order: -1;
+  /* the 3nd item will be closest to the flex-start side because it has the lowest order value */
+}
+
+.order__reverse > div:nth-child(1) {
+  order: 1;
+}
+
+.order__reverse > div:nth-child(2) {
+  order: 0;
+}
+
+.order__reverse > div:nth-child(3) {
+  order: -1;
+}
+
+/* 11 responsive navbar */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  /* align-items: stretch; */
+  margin: 0;
+  padding: 0;
+  border-color: #f6f6f6ff;
+}
+
+.navbar__container {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  /* align-items: stretch; */
+}
+.navbar__item {
+  flex: 1 1 25%;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: yellowgreen;
+}
+
+input {
+  height: 100%;
+  border: none;
+  background-color: yellowgreen;
+  border-bottom: 1px solid #ffffff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+input:focus {
+  outline: none;
+  caret-color: #ffffff;
+}
+
+input::placeholder {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* .search {
+  flex: 1;
+} */
+
+@media all and (max-width: 600px) {
+  .navbar__container {
+    flex-wrap: wrap;
+  }
+  .navbar__container > li {
+    flex: 1 1 25%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .navbar__container > li {
+    flex: 1 1 100%;
+  }
+  .search {
+    order: 1;
+  }
+}

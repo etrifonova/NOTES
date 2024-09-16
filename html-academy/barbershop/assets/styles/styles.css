@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/PTSans-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/PTSans-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/PTSans-Italic.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/PTSans-BoldItalic.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* PT Sans Narrow */
+@font-face {
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/PTSansNarrow-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #242424;
+  background-color: #FBF7F4;
+}
+
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Pages */
+
+.page-header {
+  color: #FFFFFF;
+  background: #000000;
+}
+
+.navigation-link {
+  font-family: "PT Sans Narrow", sans-serif;
+  line-height: 22px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-index {
+  color: #FFFFFF;
+  background-color: #000000;
+  background-image: url("../img/index-bg.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+
+/* List */
+.advantages-list {
+  text-align: center;
+}
+
+/* Title */
+.advantages-title {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 32px;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+
+/* Index columns */
+.index-columns {
+  color: #242424;
+  background-color: #FBF7F4;
+  background-image: url("../img/bg-noisy.png");
+}
+
+/* Services*/
+
+.services {
+  text-transform: uppercase;
+}
+
+/* Title */
+.services-title {
+  font-size: 32px;
+  line-height: 35px;
+  font-weight: 700;
+}
+
+
+/* Services*/
+
+.services {
+  text-transform: uppercase;
+}
+
+/* Title */
+.services-title {
+  font-size: 32px;
+  line-height: 35px;
+  font-weight: 700;
+}
+
+/* Price */
+.services-list {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.services-price {
+  color: #AF7842;
+}
+
+
+/* Title */
+.gallery-title {
+  font-size: 32px;
+  line-height: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contacts {
+  font-weight: 700;
+}
+
+/* Title */
+.contacts-title {
+  font-size: 32px;
+  line-height: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+/* Subtitle */
+.contacts-subtitle {
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #AF7842;
+}
+
+/* Phone */
+.contacts-phone {
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #242424;
+}
+
+
+/* Title */
+.appointment-title {
+  font-size: 32px;
+  line-height: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* List */
+.appointment-form {
+  color: #595959;
+}
+
+/* Label */
+.form-label {
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.page-footer {
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #242424;
+  background-image: url("../img/bg-noisy.png");
+  background-repeat: repeat;
+}
+
+.page-footer a {
+  color: #FFFFFF;
+}
+
+.page-footer .htmlacademy-link {
+  font-size: 14px;
+  color: #DBB590;
+}
+
+.page-footer-title {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.footer-contacts-address {
+  font-style: normal;
+}
+
+.footer-contacts-address p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.footer-contacts-address-phone {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.footer-contacts-map-link {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+

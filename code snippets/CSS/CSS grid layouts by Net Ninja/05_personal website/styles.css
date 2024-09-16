@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* color variables */
+:root {
+  --text-dark: #161925;
+  --text-light: #faf9f6;
+  --green: #08ac6c;
+  --dark-gray: #282a35;
+  --light-gray: #f6f6f6;
+}
+
+html,
+body {
+  /* height: 100%; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+}
+
+img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.panel {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.panel .text {
+  background-color: var(--light-gray);
+  color: var(--text-dark);
+  padding: 30px 60px 0 60px;
+}
+
+.panel .text p {
+  line-height: 1.75em;
+}
+
+/* welcome panel */
+.panel.welcome {
+  background-color: var(--dark-gray);
+  color: var(--text-light);
+  padding: 30px 60px;
+  grid-auto-rows: 1fr;
+}
+
+.panel.welcome nav a {
+  color: var(--light-gray);
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.panel.welcome p {
+  max-width: 540px;
+  line-height: 2em;
+}
+
+.panel.welcome footer {
+  align-self: end;
+}
+
+/* about */
+.panel.about {
+  grid-template-rows: 3fr 1fr;
+  overflow: hidden;
+}
+
+/* not working nicely for me
+.panel.about img {
+  min-width: 100%;
+  min-height: 100%;
+} */
+
+/* photos */
+.panel.photos {
+  grid-template-rows: 1fr 3fr;
+}
+
+/* not working nicely for me
+ .panel.photos img {
+  min-width: 100%;
+  min-height: 100%;
+} */
+
+@media screen and (max-width: 1400px) {
+
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+  .panel.photos {
+    grid-column: span 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+@media screen and (max-width: 960px) {
+
+  main {
+    grid-template-columns: 100%;
+    grid-template-rows: 500px 400px 400px;
+  }
+  .panel.about {
+    grid-row: 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .panel img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  main {
+    grid-template-rows: 700px 600px 600px;
+  }
+  .panel.photos, .panel.about {
+    grid-template-columns: 1fr;
+    grid-column: span 1;
+    grid-template-rows: 1fr 1fr;
+    border-bottom: 1px solid var(--dark-gray);
+  }
+}

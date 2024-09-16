@@ -1,0 +1,150 @@
+/* color variables */
+:root {
+  --color-background: #fbf7f5;
+  --color-1: #b9eed9;
+  --color-2: #73d2ab;
+  --color-3: #3eb488;
+  --color-4: #0e4d92;
+  --color-5: #269ed3;
+  --color-6:  #48cbe6;
+  --color-text: #161925;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial Narrow Bold', sans-serif;
+}
+html, body {
+  height: 100%;
+  background-color: #fbf7f5;
+  margin: 10px;
+  color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: var(--color-text);
+}
+
+hr {
+    height: 10px;
+    background-color: var(--color-4);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section {
+  margin: 2rem 3rem;
+}
+
+.wrapper > div {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.wrapper > div:first-child,
+.wrapper > div:nth-child(10) {
+  background-color: var(--color-1);
+}
+
+.wrapper > div:nth-child(2),
+.wrapper > div:nth-child(11) {
+  background-color: var(--color-2);
+}
+
+.wrapper > div:nth-child(3),
+.wrapper > div:last-child {
+  background-color: var(--color-3);
+}
+
+.wrapper > div:nth-child(4),
+.wrapper > div:nth-child(7) {
+  background-color: var(--color-4);
+}
+
+.wrapper > div:nth-child(5),
+.wrapper > div:nth-child(8) {
+  background-color: var(--color-5);
+}
+
+.wrapper > div:nth-child(6),
+.wrapper > div:nth-child(9) {
+  background-color: var(--color-6);
+}
+
+
+.flexbox-header {
+  display: flex;
+  background-color: var(--color-5);
+  padding: 1rem;
+}
+
+.flexbox-header > div {
+  border-radius: 8px;
+}
+
+.flexbox-header > div:nth-child(3) {
+  margin-left: auto;
+}
+
+.grid-page {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px 200px 50px;
+}
+
+.header {
+  grid-column: 1 / -1;
+}
+
+.menu {
+  grid-column: 1 / 2;
+}
+
+.content {
+  grid-column: 2 / -1;
+}
+
+.footer {
+  grid-column: 1 / -1;
+}
+
+.flex-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px 200px 50px;
+}
+
+.flex-grid > .header {
+  grid-column: 1 / -1;
+}
+
+.flex-grid > .menu {
+  grid-column: 1 / 2;
+}
+
+.flex-grid > .content {
+  grid-column: 2 / -1;
+}
+
+.flex-grid > .footer {
+  grid-column: 1 / -1;
+}
+
+.flex-grid > .header {
+  background-color: var(--color-5) !important;
+  padding: 1rem !important;
+  display: flex !important;
+}
+
+.flex-grid > .header > div:nth-child(2) {
+  margin-left: 2rem;
+}
+
+.flex-grid > .header > div:nth-child(3) {
+  margin-left: auto;
+}

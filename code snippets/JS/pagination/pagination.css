@@ -1,0 +1,103 @@
+:root {
+  /* color palette https://colorhunt.co/palette/97bfb4f5eedcdd4a484f091d */
+  --color-1: #97BFB4;
+  --color-1-rgb: 151,191,180;
+  --color-2: #F5EEDC;
+  --color-3: #DD4A48;
+  --color-4: #4F091D;
+  --color-4-rgb: 79,9,29;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, var(--color-2) 0%, var(--color-3) 100%) no-repeat;
+  height: 100vh;
+}
+
+.wrapper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 500px;
+  font-size: 25px;
+  background-color: rgba(var(--color-4-rgb), 0.4);
+  border-radius: 15px;
+  color: whitesmoke;
+  cursor: default;
+}
+
+#paginationList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 22px;
+  width: 100%;
+}
+
+.pagination {
+  width: 500px;
+  border-radius: 35px;
+  box-shadow: 0 0 20px 5px var(--color-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(var(--color-1-rgb), 0.4);
+  padding: 10px;
+}
+
+.pagination a {
+  padding: 9px 10px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--color-2);
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+}
+
+.control {
+  font-size: 25px;
+  font-weight: bold;
+  background-color: transparent;
+  color: var(--color-2);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 25px;
+  transition: 0.5s ease-in-out;
+}
+
+.disabled {
+  color: yellow;
+  cursor: default;
+}
+
+.control:not(.disabled):hover, .pageNumbers a:hover {
+  background-color: rgba(var(--color-1-rgb), 0.4);
+  color: black;
+}
+
+a.active {
+  background-color: white;
+  color: green;
+}
+
+.hidden {
+  display: none;
+}
+
+
+

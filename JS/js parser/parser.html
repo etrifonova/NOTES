@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parse XML with JavaScript</title>
+  </head>
+  <body>
+    <!-- <script>
+      async function myFunction() {
+        const myPromise = new Promise((resolve, reject) => {
+          // Your asynchronous operation here
+          const array = [];
+          const data = fetch("https://db.chgk.info/xml")
+            .then((response) => response.text())
+            .then((text) => {
+              parser = new DOMParser();
+              doc = parser.parseFromString(text, "text/xml");
+              console.log(doc.documentElement);
+              const nodesQ = doc.querySelectorAll("Question");
+              const nodesA = doc.querySelectorAll("Answer");
+              let questions = [];
+              for (const nodeQ of nodesQ) {
+                const question = nodeQ.innerHTML;
+                questions.push(question);
+              }
+              let answers = [];
+              for (const nodeA of nodesA) {
+                const answer = nodeA.innerHTML;
+                answers.push(answer);
+              }
+              console.log(questions.length);
+              console.log(answers.length);
+
+              for (let i = 0; i < 50; i++) {
+                array.push({ question: "", answer: "" });
+                array[i].question = questions[i];
+                array[i].answer = answers[i];
+                console.log(array);
+              }
+            });
+          resolve(array);
+        });
+
+        const myVariable = await myPromise;
+        console.log(myVariable); // "Promise resolved!"
+      }
+
+      myFunction();
+
+      // async function fetchData() {
+      //   const array = [];
+      //   const data = await fetch("https://db.chgk.info/xml")
+      //     .then((response) => response.text())
+      //     .then((text) => {
+      //       parser = new DOMParser();
+      //       doc = parser.parseFromString(text, "text/xml");
+      //       console.log(doc.documentElement);
+      //       const nodes = doc.querySelectorAll("Question");
+      //       console.log(nodes);
+      //       for (const node of nodes) {
+      //         const question = node.innerHTML;
+      //         array.push(question);
+      //       }
+      //     });
+      //     return array;
+      // }
+
+      // let outsideVariable = fetchData();
+      // console.log(outsideVariable);
+
+      // let outsideVariable;
+      // fetch("https://db.chgk.info")
+      //   .then((response) => response.text())
+      //   .then(data => {
+      //     outsideVariable = data;
+      //   })
+      //   .then(() => {
+      //     console.log(outsideVariable);
+      //   })
+
+      //   console.log(outsideVariable);
+
+      // fetch("https://db.chgk.info/xml")
+      //   .then((response) => response.text())
+      //   .then((text) => {
+      //     const parser = new DOMParser();
+      //     const doc = parser.parseFromString(text, "text/xml");
+      //     console.log(doc.documentElement);
+      //     const nodes = doc.querySelectorAll('Question');
+      //     console.log(nodes);
+      //     const array = [];
+      //     for (const node of nodes ) {
+      //       const question = node.innerHTML;
+      //       array.push(question);
+      //     }
+      //     console.log(array);
+      //   });
+
+      // from Web Dev Simplified
+      // fetch("https://reqres.in/api/users", {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json'
+      //   },
+      //   body: JSON.stringify({
+      //     name: 'User 1'
+      //   })
+      // })
+      // .then(res => {
+      //   return res.json();
+      // })
+      // .then(data => console.log(data))
+      // .catch(error => console.log('ERROR'))
+    </script> -->
+
+  <script>
+    fetch("http://www.db.chgk.info/questions").then( res => {
+    console.log(res.json());
+    // return res.json();
+  })
+  // .then(loadedQuestions => {
+  //   console.log(loadedQuestions);
+  //   questions = loadedQuestions.results.map( loadedQuestion => {
+  //     const formattedQuestion = {
+  //       question: loadedQuestion.question
+  //     };
+
+  //     const answerChoices = [... loadedQuestion.incorrect_answers];
+  //     formattedQuestion.answer = Math.floor(Math.random()*3) + 1;
+  //     answerChoices.splice(formattedQuestion.answer - 1, 0, loadedQuestion.correct_answer);
+
+  //     answerChoices.forEach((choice, index) => {
+  //       formattedQuestion["choice" + (index+1)] = choice;
+  //     })
+
+  //     return formattedQuestion;
+  //   })
+  //   startGame();
+  // })
+  // .catch( err => {
+  //   console.error(err);
+  // })
+  </script>
+  </body>
+</html>

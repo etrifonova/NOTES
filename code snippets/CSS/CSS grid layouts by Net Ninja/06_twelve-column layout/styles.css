@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* color variables */
+:root {
+  --text-dark: #161925;
+  --text-light: #faf9f6;
+  --white: #ffffff;
+  --green: #08ac6c;
+  --dark-gray: #282a35;
+  --dark-gray-rgb: 40, 42, 53;
+  --light-gray: #f6f6f6;
+}
+
+html,
+body {
+  /* height: 100%; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  background-color: var(--light-gray);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 20px;
+}
+
+header {
+  padding: 20px 40px;
+  background-color: var(--dark-gray);
+  color: var(--text-light);
+  align-items: center;
+}
+
+h1 {
+  grid-column: span 6;
+}
+
+header nav {
+  grid-column: 7 / span 6;
+  justify-self: end;
+}
+
+main {
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+main img {
+  width: 100%;
+  grid-column: span 6;
+  border-radius: 6px;
+}
+
+main .welcome {
+  grid-column: 8 / span 5;
+}
+
+main > h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 20px;
+}
+
+main > .card {
+  grid-column: span 4;
+  background-color: var(--white);
+  color: var(--text-dark);
+  padding: 10px 20px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 3px rgba(var(--dark-gray-rgb), 0.05);
+}
+
+@media screen and (max-width: 960px) {
+
+  main img {
+    grid-column: 2 / span 10;
+  }
+
+  main .welcome {
+    grid-column: 3 / span 8;
+    text-align: center;
+  }
+
+  main .card {
+    grid-column: 3 / span 8;
+  }
+
+}

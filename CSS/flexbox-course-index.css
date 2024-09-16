@@ -1,0 +1,70 @@
+
+/* CSS Flexbox Course https://youtu.be/-Wlt8NRtOpo */
+
+
+
+/* the value of 1 means that the flex items take half of the area and change with the width of the container 
+flex is the shorthand property for flex-grow, flex-shrink and flex-basis;
+
+flex grow (default value - 0) defines how much of the remaining area the item takes up. the ratio between the items influences on how much each item takes up
+
+fkes shrink (default value - 1) - basically the opposite of grow
+
+Example code:
+
+
+.home {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+}
+
+.logout {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+}
+
+
+.container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+}
+
+.home {
+    flex: 1 1 200px;
+}
+
+.logout {
+    flex: 10 1 200px;
+}
+
+
+
+*/
+
+
+
+/* Flex, grow, shrink, basis
+
+ */
+
+/* margin auto
+
+.container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+}
+
+.logout {
+    margin-left: auto;
+}
+
+.search {
+    margin-left: auto;
+}
+if the search has auto for the margin-left, then both the logout and search will be pushed to the right
+
+.home {
+    margin-right: auto;
+} */

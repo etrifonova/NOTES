@@ -1,2 +1,3 @@
-# Study Notes
-My notes based on a basic JS course by freeCodeCamp, html-academy and some other sources
+# NOTES
+
+My notes from courses and videos on various topics

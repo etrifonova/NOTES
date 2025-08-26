@@ -45,6 +45,19 @@ S3:
 
 // console.log(solution())
 
+function hyphenAfterEachLetter(string) {
+  const newArray = [];
+  for (let i = 0; i < string.split("").length; i++) {
+    if (i < string.split("").length - 1) {
+      newArray.push(string.split("")[i].concat(["-"]));
+    } else {
+      newArray.push(string.split("")[i]);
+    }
+  }
+  return newArray.join('');
+}
+
+console.log(hyphenAfterEachLetter("Mazinkaiser"));
 
 /* Not very secure
 https://www.codewars.com/kata/526dbd6c8c0eb53254000110/train/javascript
@@ -81,8 +94,6 @@ S3:
 const alphanumeric = str => /^[0-9a-z]+$/i.test(str)
 
 */
-
-
 
 /*
 
